@@ -1,0 +1,32 @@
+body{
+
+}
+
+main{
+
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.list{
+    
+    background-color: silver;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+footer{
+    
+    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#employeeDropList{
+    height: 100px;
+    width: 300px;
+    border-style: solid;
+    padding: 3px black;
+}

@@ -1,0 +1,100 @@
+<html>
+<body>
+    <header>
+        <h1>Employee Admin Page</h1>
+    </header>
+    <main>
+       
+        <form onsubmit="handleSubmitEmployee(event)">
+        <h2>Add new employee</h2>
+            <div>
+                <label>Name:
+                    <div>
+                        <input name="employeeName" placeholder="Type name of new employee" />
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label>E-mail:
+                    <div><input name="email" placeholder="example@mail.com" /></div>
+                </label>
+            </div>
+            <div>
+                <label>Identity-number:
+                    <div>
+                        <input name="identityNumber" placeholder="04058525234"></div>
+                </label>
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+        <form onsubmit="handleSubmitMission(event)">
+        <h2>Add new mission</h2>
+            <div>
+                <label>Mission name:
+                    <div>
+                        <input name="missionName" placeholder="Type mission name" />
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label>Description:
+                    <div><input type = "text" name="description" placeholder="Small description of mission" /></div>
+                </label>
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+        </main>
+        <div class ="list">
+                <div>
+                <label><h2>Employees:</h2>
+                    <div id = "employeesDiv">
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label><h2>Missions:</h2>
+                    <div id = "missionsDiv">
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label><h2>Live missions:</h2>
+                    <div id = "missionsWorkersDiv">
+                    </div>
+                </label>
+            </div>
+        </form>
+       </div>
+    <footer ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+                <div> 
+        <form onsubmit="addEmployeeToMission(event)">
+        <h2>Add employees to mission</h2>
+            <div>
+                <label>Mission:
+                    <div>
+                        <select id = "select">
+                            <option> - Select mission - </option>
+                        </select>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label>Employees:
+                    <div id = "employeeDropList">
+                    </div>
+                </label>
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+</footer>
+</body>
+<head>
+    <title>Admin Page</title>
+    <link type="text/css" rel="stylesheet" href="/style.css" />
+    <script src="scriptsheet.js"></script>
+</head>
